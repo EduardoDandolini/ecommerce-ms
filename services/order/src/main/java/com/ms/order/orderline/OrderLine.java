@@ -1,5 +1,6 @@
-package com.ms.order.order;
+package com.ms.order.orderline;
 
+import com.ms.order.order.Order;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

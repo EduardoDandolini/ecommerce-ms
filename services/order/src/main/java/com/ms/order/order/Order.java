@@ -1,10 +1,8 @@
 package com.ms.order.order;
 
+import com.ms.order.orderline.OrderLine;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -17,6 +15,7 @@ import static jakarta.persistence.EnumType.STRING;
 
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Getter
 @Setter
 @EntityListeners(AuditingEntityListener.class)
