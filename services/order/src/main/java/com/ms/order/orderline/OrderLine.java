@@ -2,13 +2,11 @@ package com.ms.order.orderline;
 
 import com.ms.order.order.Order;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Getter
 @Setter
 @Entity
@@ -22,7 +20,7 @@ public class OrderLine {
     @JoinColumn(name = "order_id")
     private Order order;
 
-    private String productId;
+    private Integer productId;
 
     private double quantity;
 }
